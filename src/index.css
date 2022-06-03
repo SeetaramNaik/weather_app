@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  color: rgb(65, 67, 199);
+}
+h4,h3{
+  color: #fff;
+}
+
+body {
+  font-family: 'Shippori Antique B1', sans-serif;
+  min-height: 100vh; 
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.app {
+  background-image: url('./img/cold.jpg');
+  /* background-size: cover; */
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  /* width: 100%; */
+  transition: 0.4 ease-out;
+}
+.app.warm {
+  background-image: url('./img/warm1.jpg');
+}
+.header{
+  background-color: #313124;
+  text-align: center;
+  color: rgba(25, 26, 19, 0.25);
+  padding-bottom: 20px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+
+  /* below code for faded effect*/
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(134, 181, 196, 0.61),
+    #111
+  );
+}
+p{
+  text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	padding: 1.5em 0em;
+  color: rgb(252, 251, 247);
+}
+span{
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(26, 25, 25, 0.5);
+  color: rgb(243, 243, 240);
+  background-clip: text;
+}
+
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+  padding: 25px;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.searchbar {
+  display: block;
+  width: 70%;
+  padding: 10px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.21);
+}
+.searchbar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.weather-card {
+  margin-right: auto;
+  margin-left: auto;
+  width: 350px;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  /* height: 300px; */
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  text-align: center;
+  /* height: 20rem; */
+}
+
+.location-box .location {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+.location-box .date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+.weather-box {
+  text-align: center;
+}
+.weather-box .temp {
+  /* position: relative;
+  display: inline-block; */
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .weather {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
